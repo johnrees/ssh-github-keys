@@ -1,9 +1,8 @@
 #!/bin/sh
 
-# Shell script to install github public keys on a remote machine
-# Takes the remote machine name as an argument.
-# Obviously, the remote machine must accept password authentication,
-# or one of the other keys in your ssh-agent, for this to work.
+# USE AT YOUR OWN RISK!
+
+# Copies a github user's public keys and installs them on a remote machine.
 
 if [ "$#" -lt 1 ] || [ "$1" = "-h" ] || [ "$1" = "--help" ]; then
   echo "Usage: $0 github_username [user@]machine" >&2
