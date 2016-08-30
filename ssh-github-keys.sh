@@ -19,7 +19,7 @@ The following keys (for github.com/$1) have been added -
 
 $GET_ID
 
-Double check all is OK by logging in with "ssh '$2'", and check:
+Verify everything went OK by logging in with "ssh '$2'", and check:
 
   .ssh/authorized_keys
 
