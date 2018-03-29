@@ -11,7 +11,7 @@ fi
 
 GET_ID=$(curl -s -L github.com/$1.keys)
 
-echo "$GET_ID" | ssh $2 "umask 077; test -d .ssh || mkdir .ssh; cat >> .ssh/authorized_keys;" || exit 1
+echo "# START github.com/$1\n$GET_ID\n# END github.com/$1\n" | ssh $2 "umask 077; test -d .ssh || mkdir -p .ssh; cat >> .ssh/authorized_keys;" || exit 1
 
 cat <<EOF
 The following keys (for github.com/$1) have been added -
