@@ -2,7 +2,7 @@
 
 `./ssh-github-keys.sh GITHUB_USERNAME [USER@]SERVER`
 
-##Usage
+## Usage
 
 This script will copy github public keys from `github.com/username.keys` and append them to the `~/.ssh/authorized_keys` file.
 
